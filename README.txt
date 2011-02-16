@@ -1,4 +1,4 @@
-This project implements the algorithm from the included sign_manipulations.pdf paper. It has been created as part of my exam for the course Methods and techniques for image processing at Politecnico di Milano, polo di Como.
+This project implements the algorithm from the included sign_manipulations.pdf paper. It has been created as part of my exam for the course Methods and technologies for image processing at Politecnico di Milano, polo di Como.
 
 Requirements
 The code depends on the VLFeat library (Matlab Api).
