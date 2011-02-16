@@ -20,11 +20,10 @@ classdef GeneticMatcher
             for j=1:self.population
                 chromosomes{j} = self.getRandomChromosome(first_image, second_image);
             end
-%            chromosomes{4} = self.buildPairs(first_image, second_image);
             for i=1:self.limit
                 fitness = [];
                 for j=1:self.population
-                    fitness = [fitness; self.evaluator.getFitness(chromosomes{j})];
+                    fitness = [fitness; self.evaluator.getInliers(chromosomes{j})];
                 end
                 [fitness, indexes] = sort(fitness, 1, 'descend');
                 fitness(1:5)
